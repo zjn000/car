@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0" charset="UTF-8">
+<title>合同-抽点（新）</title>
+<link href="__ADMIN_ACEADMIN__/css/bootstrap.min.css" rel="stylesheet" />
+<link rel="stylesheet" href="__ADMIN_ACEADMIN__/css/font-awesome.min.css" />
+<link rel="stylesheet" href="__PUBLIC__/statics/font-awesome-4.4.0/css/font-awesome.min.css" />
+<script src="__PUBLIC__/statics/js/jquery-1.10.2.min.js"></script>
+<script src="__ADMIN_ACEADMIN__/js/bootstrap.min.js"></script>
+<script src="__PUBLIC__/statics/js/jquery.validate.min.js"></script>
+<script src="__PUBLIC__/statics/signature/js/jq-signature.js"></script>
+<script src="__PUBLIC__/statics/signature/js/s_signature.js"></script>
+<style type="text/css">
+body{
+	padding-top: 80px;
+}
+label.error {
+	color:#EA5200;
+};
+</style>
+</head>
+<body >
+<div class="container">
+	<div class="row clearfix">
+		<div class="col-md-12 column">
+			<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+			    <div class="col-md-12 column" >
+				    <div class="navbar-header">
+				    	<div class="col-xs-4"><a class="navbar-brand" href="javascript:history.go(-1);" ><span class="icon-chevron-left" style="color:#bfbfbf;"></span></a></div>
+				    	<div class="col-xs-7"><span class="navbar-brand">抽点新沃有</span></div>	
+				    </div>
+			    </div>
+			</nav>
+			
+			<div class="col-sm-12 column">
+				<form class="form-inline" action="{:U('Api/Contract/add')}" method="post" id="myForm">
+					<input type="hidden" name="type" value="1" />
+				    <table class="table">
+				        <tr>
+				        	<th>签约类型</th>
+				            <td>
+				            	<select name="signed_type" class="form-control" required>
+						            <volist name=":C('SIGNED_TYPE_CONFIG')" id="vo">
+						   				<option value="{$key}">{$vo}</option>
+									</volist>  
+					            </select>
+				            </td>
+				        </tr>
+				        
+				        <tr>    
+				        	<th>商户名称</th>
+				            <td>
+				            	<input class="form-control"  type="text" name="b_name"  required />
+				            </td>
+				        </tr>
+				        <tr>    
+				        	<th>商户地址</th>
+				            <td>
+				            	<input class="form-control"  type="text" name="b_address" required />
+				            </td>
+				        </tr>
+				        
+				        <tr>
+				        	<th>服务开始日期</th>
+				        	<td><input class="form-control"  type="date" id="service_start_time" name="service_start_time" required></td>
+				        </tr>
+				        <tr>
+				        	<th>服务结束日期</th>
+				        	<td><input class="form-control"  type="date" id="service_end_time" name="service_end_time" required></td>
+				        </tr>
+				        
+				        
+				        <tr>    
+				            <th>服务月数</th>
+				            <td>
+				            	<input class="form-control" type="text" name="service_month"  />
+				            </td>
+				        </tr>
+				        <tr>    
+				            <th>终端机数</th>
+				            <td>
+				            	<input class="form-control" type="text" name="terminals_num"  />
+				            </td>
+				        </tr>
+				        <tr>    
+				            <th>上线商品数量</th>
+				            <td>
+				            	<input type="radio" value="80"  name="online_goods_num" checked="checked" />80&emsp;&emsp;&emsp;&emsp;
+				            	<input type="radio" value="150"  name="online_goods_num" />150
+				            </td>
+				        </tr>
+				        <tr>    
+				            <th>服务费预充值</th>
+				            <td>
+				            	<select name="service_pre_charge" class="form-control" required>
+				            		<option value="500" selected="selected">500</option>
+				            		<option value="1000">1000</option>
+				            		<option value="2000">2000</option>
+				            		<option value="3000">3000</option>
+				            		<option value="4000">4000</option>
+				            		<option value="5000">5000</option>
+				            	</select>
+				            </td>
+				        </tr>
+				        <tr>    
+				        	<th>商家类别</th>
+				            <td>
+					            <select name="b_category" class="form-control" required >
+						            <volist name=":C('MERCHANT_CATEGORIES_CONFIG')" id="vo">
+						   				<option value="{$key}">{$vo.title}</option>
+									</volist>  
+					            </select>
+				            </td>
+				         </tr>
+				         
+				         <tr>    
+				            <th>付款方式</th>
+				            <td>
+				            	<input type="radio" value="1"  name="pay_method" />现金&emsp;&emsp;&emsp;
+				            	<input type="radio" value="2"  name="pay_method" checked="checked"/>转账
+				            </td>
+				        </tr>
+				        
+				        <tr>    
+				            <th>线上支付</th>
+				            <td>
+				            	<input type="radio" value="1"  name="online_pay" />开通&emsp;&emsp;&emsp;
+				            	<input type="radio" value="2"  name="online_pay" checked="checked"/>不开通
+				            </td>
+				        </tr>
+				        
+				        <tr>    
+				            <th>是否收费</th>
+				            <td>
+				            	<input type="radio" value="1"  name="is_toll" />已收费&emsp;&emsp;
+				            	<input type="radio" value="2"  name="is_toll" checked="checked"/>未收费
+				            </td>
+				        </tr>
+
+				        <tr>
+				            <td colspan="2" style="text-align: center;padding-top: 50px;">
+				            	<button type="submit" class="btn btn-block btn-lg btn-info">确认信息并生成预览</button>
+				            </td>
+				        </tr>
+				    </table>
+				</form>
+			</div>
+		</div>
+	</div>
+</div>
+<script>
+$("#myForm").validate({
+
+	rules: {
+		service_month: {
+			required: true,
+			digits:true
+		},
+		terminals_num: {
+			required: true,
+			digits:true
+		}
+	}, 
+	messages: { 		
+		service_month: { 
+
+			digits:"只能输入整数"
+		},
+		terminals_num: {
+
+			digits:"只能输入整数"
+		}
+	} 
+
+
+
+});
+</script>
+</body>
+</html>

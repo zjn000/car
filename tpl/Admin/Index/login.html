@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" charset="UTF-8"/>
+    <title>后台管理系统</title>
+    <bootstrapcss />
+    <webuploadercss />
+    <style type="text/css">
+    .login-page {
+	  background: #fff;
+	  margin-top: 15%;
+	}
+	.login-page .login-content {
+	  position: relative;
+	  width: 320px;
+	  margin: 0 auto;
+	  text-align: center;	  
+	  -moz-transition: all 550ms ease-in-out;
+	  -o-transition: all 550ms ease-in-out;
+	  -webkit-transition: all 550ms ease-in-out;
+	  transition: all 550ms ease-in-out;
+	}    
+    </style>
+</head>
+<body class="login-page">
+<div class="login-form">
+
+		<div class="login-content">
+
+			<div class="form-login-error">
+				<h3>Invalid login</h3>
+				<br />				
+			</div>
+
+			<form method="post" role="form" id="form_login" >
+
+				<div class="form-group">
+
+					<div class="input-group">
+						<div class="input-group-addon">
+							<i class="fa fa-user"></i>
+						</div>
+
+						<input type="text" class="form-control" name="phone" id="phone" value="13612412490" placeholder="Phone" autocomplete="off" />
+					</div>
+
+				</div>
+
+				<div class="form-group">
+
+					<div class="input-group">
+						<div class="input-group-addon">
+							<i class="fa fa-key"></i>
+						</div>
+
+						<input type="password" class="form-control" name="password" id="password" value="123456" placeholder="Password" autocomplete="off" />
+					</div>
+
+				</div>
+
+				<div class="form-group">
+					<button type="submit" class="btn btn-primary btn-block btn-login">
+						<i class="fa fa-sign-in"></i>
+						Login In
+					</button>
+				</div>		
+			</form>
+		</div>
+</div>
+</body>
+</html>

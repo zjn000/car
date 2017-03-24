@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1.0,user-scalable=0;" charset="UTF-8">
+<title>添加拜访</title>
+<link href="__ADMIN_ACEADMIN__/css/bootstrap.min.css" rel="stylesheet" />
+<link rel="stylesheet" href="__ADMIN_ACEADMIN__/css/font-awesome.min.css" />
+<link rel="stylesheet" href="__PUBLIC__/statics/font-awesome-4.4.0/css/font-awesome.min.css" />
+<script src="__PUBLIC__/statics/js/jquery-1.10.2.min.js"></script>
+<script src="__ADMIN_ACEADMIN__/js/bootstrap.min.js"></script>
+<webuploadercss/>
+<webuploaderjs/>
+<script src="__PUBLIC__/statics/js/jquery.validate.min.js"></script>
+
+</head>
+<body >
+<div class="container">
+	<div class="row clearfix">
+		<div class="col-md-14 column">
+			<nav class="navbar navbar-default navbar-static-top" role="navigation">
+				<div class="navbar-header">
+					 <a href="javascript:history.go(-1);" class="navbar-brand" >&emsp;<span class="icon-chevron-left" style="color:#bfbfbf;font-size:30px;">&emsp;</span></a>
+				</div>
+			</nav>
+			
+			<div class="col-sm-12 column">
+				<!-- 导航栏结束 -->
+				<form class="form-inline" method="post" id="myForm" enctype="multipart/form-data" >
+					<input type="hidden" name="business_id" value="{:I('get.id')}" />
+				    <table class="table">
+				        <tr>
+				        	<th colspan="2">
+				        	<input type="hidden" name="gps_positioning" id="gps_positioning" />
+				        	<label id="demo">正在定位...</label>
+				        	</th>
+				        </tr>
+				        
+				        <tr>
+				        	<th>商户名称</th>
+				            <td>{:I('get.shop_name')}</td>
+				        </tr>
+				        <tr>    
+				        	<th>拜访内容</th>
+				            <td>
+				            <select name="type" class="form-control">
+					            <volist name=":C('VISITS_TYPE_CONFIG')" id="vo">
+					   				<option value="{$key}">{$vo}</option>
+								</volist>  
+				            </select>
+				            </td>
+				        </tr>
+				        <tr>
+				        	<th>门头照</th>
+				            <td>
+				            	<uploadpic name="picture" url="{:U('Api/Visits/ajax_upload')}" word="" />
+				            </td>
+				        </tr>
+				        
+				        
+				        <tr>
+				            <td colspan="2" style="text-align: center;">
+				            	<button type="submit" class="btn btn-block btn-lg btn-info">提交</button>
+				            </td>
+				        </tr>
+				    </table>
+				</form>
+			</div>
+		</div>
+	</div>
+</div>
+<script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=58ea793d0469703127eb9377134c3080"></script>
+<script type="text/javascript" src="http://developer.baidu.com/map/jsdemo/demo/convertor.js"></script>
+<script>
+$("#myForm").validate({ 
+	rules: {
+		picture: {
+			required: true			
+		}
+	}, 
+	messages: { 		
+		picture: { 
+			required: "必需上传"
+		}
+	} 
+});	
+
+var x=document.getElementById("demo");
+var g=document.getElementById("gps_positioning");
+
+function getLocation()
+{
+	
+	var geolocation = new BMap.Geolocation();
+	geolocation.getCurrentPosition(function(r){
+		if(this.getStatus() == BMAP_STATUS_SUCCESS){
+				  	
+		  	var latlon = r.point.lat+','+r.point.lng;
+			var url = "http://api.map.baidu.com/geocoder/v2/?ak=58ea793d0469703127eb9377134c3080&callback=renderReverse&location="+latlon+"&output=json&pois=1";
+				  
+			  $.ajax({  
+			      type: "GET",  
+			      dataType: "jsonp",  
+			      url: url, 
+			      beforeSend: function(){ 
+			    	  x.innerHTML="正在定位..."; 
+			      }, 
+			      success: function (json) {  
+			          if(json.status==0){ 
+			        	  x.innerHTML=json.result.formatted_address;
+			        	  g.value=json.result.formatted_address;
+			          } 
+			      }, 
+			      error: function (XMLHttpRequest, textStatus, errorThrown) {  
+			    	  x.innerHTML=latlon+"地址位置获取失败";
+			    	  g.value="";
+			      } 
+			  }); 
+		}
+		else {
+			alert('出现错误,错误参数:'+this.getStatus());
+			x.innerHTML=latlon+"地址位置获取失败";
+	    	g.value="";
+		}        
+	},{enableHighAccuracy: true});
+	
+	
+}
+getLocation();
+</script>
+
+</body>
+</html>

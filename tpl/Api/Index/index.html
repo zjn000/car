@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" charset="UTF-8">
+<title>CRM系统</title>
+<link href="__ADMIN_ACEADMIN__/css/bootstrap.min.css" rel="stylesheet" />
+<link rel="stylesheet" href="__ADMIN_ACEADMIN__/css/font-awesome.min.css" />
+<link rel="stylesheet" href="__PUBLIC__/statics/font-awesome-4.4.0/css/font-awesome.min.css" />
+<script src="__PUBLIC__/statics/js/jquery-1.10.2.min.js"></script>
+<script src="__ADMIN_ACEADMIN__/js/bootstrap.min.js"></script>
+</head>
+<body style="background-color:#C1C1C1;">
+<div class="container">
+	<div class="row clearfix">
+		<div class="col-md-12 column">
+			<div class="list-group">
+				<div style="margin: 20px 0px;"><button type="button" class="btn btn-lg btn-block btn-info" onclick="location='{:U('Api/Business/index')}'">客户信息</button></div>
+				<div style="margin: 20px 0px;"><button type="button" class="btn btn-lg btn-block btn-info" onclick="location='{:U('Api/Visits/index')}'">拜访管理</button></div>
+				<div style="margin: 20px 0px;"><button type="button" class="btn btn-lg btn-block btn-info" onclick="location='{:U('Api/VisitsPlan/index')}'">拜访计划</button></div>
+				<div style="margin: 20px 0px;"><button type="button" class="btn btn-lg btn-block btn-info" onclick="location='{:U('Api/Contract/index')}'">合同管理</button></div>
+				<div style="margin: 20px 0px;"><button type="button" class="btn btn-lg btn-block btn-warning" onclick="location='{:U('Home/Index/logout')}'">退出登录</button></div>
+			</div>
+		</div>
+	</div>
+</div>
+</body>
+</html>

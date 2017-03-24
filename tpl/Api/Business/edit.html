@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0" charset="UTF-8">
+<title>客户信息</title>
+<link href="__ADMIN_ACEADMIN__/css/bootstrap.min.css" rel="stylesheet" />
+<link rel="stylesheet" href="__ADMIN_ACEADMIN__/css/font-awesome.min.css" />
+<link rel="stylesheet" href="__PUBLIC__/statics/font-awesome-4.4.0/css/font-awesome.min.css" />
+<script src="__PUBLIC__/statics/js/jquery-1.10.2.min.js"></script>
+<script src="__ADMIN_ACEADMIN__/js/bootstrap.min.js"></script>
+<script src="__PUBLIC__/statics/js/jquery.validate.min.js"></script>
+</head>
+<body >
+<div class="container">
+	<div class="row clearfix">
+		<div class="col-md-14 column">
+			<nav class="navbar navbar-default navbar-static-top" role="navigation">
+				<div class="navbar-header">
+					 <a href="javascript:history.go(-1);" class="navbar-brand" >&emsp;<span class="icon-chevron-left" style="color:#bfbfbf;font-size:30px;">&emsp;</span></a>
+				</div>
+			</nav>
+			
+			<div class="col-sm-12 column">
+				<form class="form-inline" method="post" id="myForm">
+				<input type="hidden" name="id" value="{$assign['id']}">
+				    <table class="table">
+				      
+					        <tr>
+					        	<th><font color="red">*</font>商户名称</th>
+					            <td>
+					            	<input class="form-control" type="text" name="name" value="{$assign['name']}" />
+					            </td>
+					        </tr>
+				        
+				        
+				        <tr>    
+				        	<th>商户负责人</th>
+				            <td>
+				            	<input class="form-control"  type="text" name="principal" value="{$assign['principal']}" />
+				            </td>
+				        </tr>
+				        
+				        <tr>    
+				            <th>联系电话</th>
+				            <td>
+				            	<input class="form-control" type="text" name="phone"  value="{$assign['phone']}" >
+				            </td>
+				        </tr>
+				        <tr>    
+				        	<th>品类</th>
+				            <td>
+					            <select name="category" class="form-control">
+						            <volist name=":C('BUSINESS_CATEGORY_CONFIG')" id="vo">
+						   				<option value="{$key}" <eq name="key" value="$assign['category']">selected</eq> >{$vo}</option>
+									</volist>  
+					            </select>
+				            </td>
+				         </tr>
+				        <tr>   
+				            <th>店铺类型</th>
+				            <td>
+				            	<select name="type" class="form-control" >
+				            		<option value="1" <eq name="type" value="1">selected</eq>>单店</option>
+				            		<option value="2" <eq name="type" value="2">selected</eq>>连锁总店</option>
+				            		<option value="3" <eq name="type" value="3">selected</eq>>连锁分店</option>
+				            	</select>
+				            </td>
+				         </tr>
+				        <tr>   
+				            <th>商区</th>
+				            <td>
+				            	<select name="district" class="form-control">
+						            <volist name=":C('ACTIVITY_AREA_CONFIG')" id="vo">
+						   				<option value="{$key}" <eq name="key" value="$assign['district']">selected</eq> >{$vo}</option>
+									</volist>  
+					            </select>
+				            </td>
+				        </tr>
+				        <tr>    
+				        	<th>商户地址</th>
+				            <td>
+				            	<input class="form-control"  type="text" name="address" value="{$assign['address']}" >
+				            </td>
+				        </tr>
+				        <tr>  
+				        	<th>商户经度</th>
+				            <td><input class="form-control" type="text" name="lng" id="lng" value="{$assign['lng']}" ></td>
+				        </tr>
+				        <tr>
+				        	<th>商户纬度</th>
+				            <td><input class="form-control" type="text" name="lat" id="lat" value="{$assign['lat']}" ></td>
+				        </tr>
+				        <tr>
+				            <td colspan="2" style="text-align: center;">
+				            	<button type="submit" class="btn btn-block btn-lg btn-info">提交</button>
+				            </td>
+				        </tr>
+				    </table>
+				</form>
+			</div>
+		</div>
+	</div>
+</div>
+
+<script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=58ea793d0469703127eb9377134c3080"></script>
+<script type="text/javascript" src="http://developer.baidu.com/map/jsdemo/demo/convertor.js"></script>
+<script>
+$("#myForm").validate({ 
+	rules: {
+		name: {
+			required: true			
+		}
+	}, 
+	messages: { 		
+		name: { 
+			required: "必填"
+		}
+	} 
+});	
+</script>
+</body>
+</html>

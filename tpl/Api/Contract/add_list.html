@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" charset="UTF-8">
+<title>合同类型列表</title>
+<link href="__ADMIN_ACEADMIN__/css/bootstrap.min.css" rel="stylesheet" />
+<link rel="stylesheet" href="__ADMIN_ACEADMIN__/css/font-awesome.min.css" />
+<link rel="stylesheet" href="__PUBLIC__/statics/font-awesome-4.4.0/css/font-awesome.min.css" />
+<script src="__PUBLIC__/statics/js/jquery-1.10.2.min.js"></script>
+<script src="__ADMIN_ACEADMIN__/js/bootstrap.min.js"></script>
+<style type="text/css">
+body{
+	padding-top: 80px;
+}
+</style>
+</head>
+<body>
+<div class="container">
+		<div class="col-md-12 column">
+			<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+				 <div class="navbar-header">
+				    <div class="col-md-12 column" >
+				    	<div class="col-xs-4"><a class="navbar-brand" href="{:U('Api/Contract/index')}" ><span class="icon-chevron-left" style="color:#bfbfbf;"></span></a></div>
+				    	<div class="col-xs-8"><span class="navbar-brand">合同类型</span></div>	
+				    </div>
+			    </div>
+			</nav>
+		
+			<div class="list-group">
+				<div style="margin: 20px 0px;"><button type="button" class="btn btn-lg btn-block btn-info" onclick="location='{:U('Api/Contract/add',array('type'=>1))}'">抽点新沃有</button></div>
+				<div style="margin: 20px 0px;"><button type="button" class="btn btn-lg btn-block btn-info" onclick="location='{:U('Api/Contract/add',array('type'=>2))}'">新抽点商米</button></div>
+				<div style="margin: 20px 0px;"><button type="button" class="btn btn-lg btn-block btn-info" onclick="location='{:U('Api/Contract/add',array('type'=>3))}'">套餐新沃有</button></div>
+				<div style="margin: 20px 0px;"><button type="button" class="btn btn-lg btn-block btn-info" onclick="location='{:U('Api/Contract/add',array('type'=>4))}'">新套餐商米</button></div>
+				<!-- <div style="margin: 20px 0px;"><button type="button" class="btn btn-lg btn-block btn-info" onclick="location='{:U('Api/Contract/add',array('type'=>5))}'">品牌合作</button></div> -->
+			</div>
+		</div>
+	
+</div>
+</body>
+</html>

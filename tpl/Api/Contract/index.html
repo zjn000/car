@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0" charset="UTF-8">
+<title>合同信息</title>
+<link href="__ADMIN_ACEADMIN__/css/bootstrap.min.css" rel="stylesheet" />
+<link rel="stylesheet" href="__ADMIN_ACEADMIN__/css/font-awesome.min.css" />
+<link rel="stylesheet" href="__PUBLIC__/statics/font-awesome-4.4.0/css/font-awesome.min.css" />
+<script src="__PUBLIC__/statics/js/jquery-1.10.2.min.js"></script>
+<script src="__ADMIN_ACEADMIN__/js/bootstrap.min.js"></script>
+
+<style type="text/css">
+/* 分页开始 */
+.b-page {
+  background: #fff;
+  box-shadow: 0px 1px 2px 0px #E2E2E2;
+}
+.page {
+  width: 100%;
+  /*padding: 30px 15px;*/
+  background: #FFF;
+  text-align: center;
+  overflow: hidden;
+}
+.page .first,
+.page .prev,
+.page .current,
+.page .num,
+.page .current,
+.page .next,
+.page .end {
+  padding: 2px 4px;
+  margin: 1px 5px;
+  display: inline-block;
+  color: #008CBA;
+  border: 1px solid #F2F2F2;
+  border-radius: 5px;
+}
+.page .first:hover,
+.page .prev:hover,
+.page .current:hover,
+.page .num:hover,
+.page .current:hover,
+.page .next:hover,
+.page .end:hover {
+  text-decoration: none;
+  background: #F8F5F5;
+}
+.page .current {
+  background-color: #008CBA;
+  color: #FFF;
+  border-radius: 5px;
+  border: 1px solid #008CBA;
+}
+.page .current:hover {
+  text-decoration: none;
+  background: #008CBA;
+}
+/* 分页结束 */
+</style>
+
+</head>
+<body style="padding-top: 110px;">
+<div class="container">
+	<div class="row clearfix">
+		<div class="col-md-12 column">
+			 
+			<nav class="navbar navbar-default navbar-fixed-top" role="navigation" style="padding: 0 10px;">
+				
+				<table class="navbar-header" style="width: 100%; text-align: center;">
+					<tr class="nav navbar-nav">
+						<td style="width: 15%;"><a  href="{:U('Api/Index/index')}" ><span class="icon-home" style="color:#bfbfbf;font-size:30px;"></span></a></td>
+						<td style="width: auto;"><a class="navbar-brand" style="float: none;" href="{:U('Api/Contract/index')}" >合同信息</a></td>
+						<td style="width: 15%;">
+							<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+							 	<span class="icon-search"></span>
+							 </button>
+						</td>
+					</tr>
+					
+				</table>
+				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+					<form class="navbar-form navbar-left" role="search" action="{:U('Api/Contract/search')}" method="get">
+					<div class="input-group">
+						<input type="text" class="form-control" placeholder="请输入商家名称" name="b_name" /><span class="input-group-addon btn btn-primary"><button type="submit" style="border: none;background-color: #eee;"><span class="icon-search"></span></button></span>
+					</div> 
+				</form>
+				</div>
+				<button type="button" class="btn btn-info btn-block btn-lg" onclick="location='{:U('Api/Contract/add')}'">添加合同</button>
+			</nav>
+			
+			
+			<div class="col-md-14 column">
+				<div class="list-group">
+					<volist name="list['data']" id="vo">
+					<div class="list-group-item" style="background-color: #EAEAEA;">
+						<table style="width: 100%;">
+							
+							<tr>
+								<td colspan="2">{$vo.b_name}</td>
+							</tr>
+							
+							<tr>
+								<td>{$vo.protocol_number}</td>
+								<td style="float: right;"><button type="button" class="btn btn-primary btn-sm" onclick="location='{:U('Api/Contract/view_contract',array('id'=>$vo['id']))}'">查看合同</button></td>
+							</tr>
+							<tr>
+								<td  colspan="2">{$vo.nikename}&emsp;{$vo.create_time}</td>
+							</tr>
+						</table>
+					</div>
+					<div>&emsp;</div>
+					</volist>
+				</div>
+			</div>
+			{$list['page']}
+		</div>
+	</div>
+</div>
+
+
+
+		
+</body>
+</html>

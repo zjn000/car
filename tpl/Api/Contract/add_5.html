@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0" charset="UTF-8">
+<title>合同-品牌合作</title>
+<link href="__ADMIN_ACEADMIN__/css/bootstrap.min.css" rel="stylesheet" />
+<link rel="stylesheet" href="__ADMIN_ACEADMIN__/css/font-awesome.min.css" />
+<link rel="stylesheet" href="__PUBLIC__/statics/font-awesome-4.4.0/css/font-awesome.min.css" />
+<script src="__PUBLIC__/statics/js/jquery-1.10.2.min.js"></script>
+<script src="__ADMIN_ACEADMIN__/js/bootstrap.min.js"></script>
+<script src="__PUBLIC__/statics/js/jquery.validate.min.js"></script>
+<style type="text/css">
+body{
+	padding-top: 80px;
+}
+label.error {
+	color:#EA5200;
+};
+</style>
+</head>
+<body >
+<div class="container">
+	<div class="row clearfix">
+		<div class="col-md-12 column">
+			<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+			    <div class="col-md-12 column" >
+				    <div class="navbar-header">
+				    	<div class="col-xs-4"><a class="navbar-brand" href="javascript:history.go(-1);" ><span class="icon-chevron-left" style="color:#bfbfbf;"></span></a></div>
+				    	<div class="col-xs-7"><span class="navbar-brand">品牌合作</span></div>	
+				    </div>
+			    </div>
+			</nav>
+			
+			<div class="col-sm-12 column">
+				<form class="form-inline" action="{:U('Api/Contract/add')}" method="post" id="myForm">
+					<input type="hidden" name="type" value="5" />
+				    <table class="table">
+				        <tr>    
+				        	<th>商户名称</th>
+				            <td>
+				            	<input class="form-control"  type="text" name="b_name"  required />
+				            </td>
+				        </tr>
+				        <tr>    
+				        	<th>商户地址</th>
+				            <td>
+				            	<input class="form-control"  type="text" name="b_address" required />
+				            </td>
+				        </tr>
+				        
+				        <tr>
+				        	<th>服务开始日期</th>
+				        	<td><input class="form-control"  type="date" id="service_start_time" name="service_start_time" required></td>
+				        </tr>
+				        <tr>
+				        	<th>服务结束日期</th>
+				        	<td><input class="form-control"  type="date" id="service_end_time" name="service_end_time" required></td>
+				        </tr>
+				        <tr>    
+				            <th>终端机数</th>
+				            <td>
+				            	<input class="form-control" type="text" name="terminals_num"  />
+				            </td>
+				        </tr>
+				        <tr>    
+				            <th>品牌入驻费</th>
+				            <td>
+				            	<input class="form-control" type="text" name="entry_fee"  />
+				            </td>
+				        </tr>
+				        <tr>    
+				            <th>广告期数</th>
+				            <td>
+				            	<input class="form-control" type="text" name="ads_num"  />
+				            </td>
+				        </tr>
+				        <tr>    
+				            <th>广告费用</th>
+				            <td>
+				            	<input class="form-control" type="text" name="ads_fee"  />
+				            </td>
+				        </tr>
+				        <tr>    
+				            <th>服务费比例</th>
+				            <td>
+				            	<input class="form-control" type="text" name="service_charge_ratio" required />
+				            </td>
+				        </tr>
+				        
+				         
+				         <tr>    
+				            <th>付款方式</th>
+				            <td>
+				            	<input type="radio" value="1"  name="pay_method" />现金&emsp;&emsp;&emsp;
+				            	<input type="radio" value="2"  name="pay_method" checked="checked"/>转账
+				            </td>
+				        </tr>
+				        
+				        <tr>    
+				            <th>线上支付</th>
+				            <td>
+				            	<input type="radio" value="1"  name="online_pay" />开通&emsp;&emsp;&emsp;
+				            	<input type="radio" value="2"  name="online_pay" checked="checked"/>不开通
+				            </td>
+				        </tr>
+				        
+				        <tr>    
+				            <th>是否收费</th>
+				            <td>
+				            	<input type="radio" value="1"  name="is_toll" />已收费&emsp;&emsp;
+				            	<input type="radio" value="2"  name="is_toll" checked="checked"/>未收费
+				            </td>
+				        </tr>
+				         
+				        <tr>
+				            <td colspan="2" style="text-align: center;padding-top: 50px;">
+				            	<button type="submit" class="btn btn-block btn-lg btn-info">确认信息并生成预览</button>
+				            </td>
+				        </tr>
+				    </table>
+				</form>
+			</div>
+		</div>
+	</div>
+</div>
+<script src="__PUBLIC__/statics/signature/js/jq-signature.js"></script>
+<script src="__PUBLIC__/statics/signature/js/s_signature.js"></script>
+<script>
+$("#myForm").validate({
+        
+	rules: {
+		terminals_num: {
+			required: true,
+			digits:true
+		},
+		ads_fee: {
+			required: true,
+			digits:true
+		},
+		entry_fee: {
+			required: true,
+			digits:true
+		},
+		ads_num: {
+			required: true,
+			digits:true
+		}
+	}, 
+	messages: { 		
+		terminals_num: { 
+			digits:"只能输入整数"
+		},
+		ads_fee: {
+			digits:"只能输入整数"
+		},
+		entry_fee: {
+			digits:"只能输入整数"
+		},
+		ads_num: {
+			digits:"只能输入整数"
+		}
+	} 
+ 		
+ 
+ 
+});
+</script>
+</body>
+</html>

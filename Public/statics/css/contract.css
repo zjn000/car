@@ -1,0 +1,227 @@
+header {
+  display: block;
+  width: 100%;
+}
+footer {
+  position: absolute;
+  bottom: 0;
+}
+u {
+  padding: 0 2px;
+}
+.s-sub-btn {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  z-index: 1111;
+}
+.s-sub-btn > a {
+  display: block;
+  text-align: center;
+  line-height: 40px;
+}
+.reset-chevron-left {
+  color: #bfbfbf;
+}
+.autograph {
+  width: 120px;
+  height: 30px;
+}
+.page {
+  position: relative;
+  margin: 0 auto;
+  width: 794px;
+  height: 1123px;
+}
+.page .content {
+  padding: 20px 50px 0 50px;
+  box-sizing: content-box;
+}
+.page .new-content {
+  margin-top: 35px;
+  border-top: 1px solid #000;
+}
+.page .new-footer {
+  font-size: 8px;
+}
+.page .new-footer > p {
+  margin: 0;
+  padding: 2px 0;
+  text-align: center;
+}
+.page .top {
+  overflow: hidden;
+}
+.page .top > h4 {
+  overflow: hidden;
+  position: relative;
+  margin-top: 0;
+  text-align: center;
+  font-size: 20px;
+  font-weight: 700;
+}
+.page .top > h4 p:last-child {
+  float: right;
+  font-size: 12px;
+  border-bottom: 1px solid #000;
+}
+.page .top > h4 p:last-child > span {
+  padding-right: 5px;
+}
+.page .top > dl {
+  padding: 5px 0;
+  width: 50%;
+  float: left;
+  font-weight: 700;
+}
+.page .top > dl > dt {
+  display: inline-block;
+  width: 75px;
+}
+.page .top > dl > dd {
+  display: inline-block;
+  width: 70%;
+  border-bottom: 1px solid #000;
+}
+.page .btm {
+  position: relative;
+}
+.page .btm > div {
+  overflow: hidden;
+}
+.page .btm .autograph-gz {
+  position: absolute;
+  right: 80px;
+  top: 0;
+  width: 170px;
+  height: 170px;
+}
+.page .btm dl {
+  overflow: hidden;
+  margin-bottom: 6px;
+  padding: 5px 0;
+  width: 50%;
+  float: left;
+}
+.page .btm dl > dt {
+  float: left;
+  width: 72px;
+  font-weight: 500;
+}
+.page .btm dl > dd {
+  display: inline-block;
+  width: 75%;
+}
+.page .mid > p {
+  text-indent: 25px;
+}
+.page .mid .idt {
+  text-indent: 53px;
+}
+.page .mid .time > span {
+  display: inline-block;
+}
+.page .mid .hl {
+  background-color: yellow;
+}
+.page .reset-icon {
+  display: inline;
+}
+.page .reset-table2 {
+  position: relative;
+  font-size: 13px;
+}
+.page .reset-table2 tr:first-child td:first-child {
+  text-align: center;
+}
+.page .reset-table2 td {
+  vertical-align: middle;
+  border: 1px solid #000;
+}
+.page .reset-table1 {
+  position: relative;
+  text-align: center;
+  font-size: 13px;
+}
+.page .reset-table1 tr:first-child td {
+  border: 2px solid #000;
+  background-color: #fac090;
+  font-weight: 700;
+}
+.page .reset-table1 tr:first-child td > p {
+  margin-bottom: 0;
+}
+.page .reset-table1 tr:first-child td:first-child {
+  background-color: #fff;
+}
+.page .reset-table1 tr:nth-child(2) td:first-child {
+  font-weight: 700;
+}
+.page .reset-table1 tr:nth-child(2) td:first-child {
+  font-weight: 700;
+}
+.page .reset-table1 td {
+  vertical-align: middle;
+  border: 1px solid #000;
+  border: 2px solid #000;
+
+}
+.page .reset-table {
+  position: relative;
+  font-size: 13px;
+}
+.page .reset-table tr:nth-child(2) {
+  font-weight: 700;
+}
+.page .reset-table tr:nth-child(2) td {
+  background-color: #c00000;
+  color: #fff;
+}
+.page .reset-table tr:nth-last-child(1) > td {
+  text-align: inherit;
+  font-weight: 500;
+}
+.page .reset-table tr:nth-last-child(2) > td {
+  text-align: inherit;
+  font-weight: 500;
+}
+.page .reset-table tr:nth-last-child(3) > td {
+  text-align: inherit;
+  font-weight: 500;
+}
+.page .reset-table td {
+  border: 1px solid #000;
+  vertical-align: middle;
+  text-align: center;
+}
+.page .reset-table td > span {
+  border-bottom: 1px solid #000;
+}
+.page .reset-table td:first-child {
+  font-weight: 700;
+}
+.page .reset-table td:nth-child(4) {
+  font-weight: 700;
+}
+.page .reset-table td:nth-child(5) {
+  font-weight: 700;
+}
+.page .reset-table td:nth-child(6) {
+  font-weight: 700;
+}
+.page .reset-table tr:first-child {
+  background-color: #fac090;
+}
+.page .reset-table tr:first-child td {
+  font-weight: 700;
+}
+.page .reset-table tr:first-child td > p {
+  margin-bottom: 0;
+}
+.page .reset-table tr:first-child td:first-child {
+  width: 8%;
+  background-color: #fff;
+}
+.page .reset-table tr:first-child td:nth-child(2) {
+  width: 15%;
+}
