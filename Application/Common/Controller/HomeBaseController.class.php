@@ -10,11 +10,28 @@ class HomeBaseController extends BaseController{
 	 */
 	public function _initialize(){
 		parent::_initialize();
-
+		
+		
+		 
+		
+		
 	}
 
+	
+	public function getLang()
+	{
+		switch ($_COOKIE['think_language'])
+		{
+			case "en-us":
+				return false;
+			case "zh-cn":
+				return true;
+			default:
+				return true;
+		}
+	}
+	
 
 
 
 }
-

@@ -1,268 +1,1161 @@
-
 <!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<html>
 	<head>
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>Blend &mdash; Free HTML5 Bootstrap Website Template by FreeHTML5.co</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta name="description" content="Free HTML5 Website Template by FreeHTML5.co" />
-	<meta name="keywords" content="free html5, free template, free bootstrap, free website template, html5, css3, mobile first, responsive" />
-	
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Home</title>
 
-  	
+		<link href="__HOME_CSS__/master.css" rel="stylesheet">
 
-  	<!-- Facebook and Twitter integration -->
-	<meta property="og:title" content=""/>
-	<meta property="og:image" content=""/>
-	<meta property="og:url" content=""/>
-	<meta property="og:site_name" content=""/>
-	<meta property="og:description" content=""/>
-	<meta name="twitter:title" content="" />
-	<meta name="twitter:image" content="" />
-	<meta name="twitter:url" content="" />
-	<meta name="twitter:card" content="" />
+		<!-- SWITCHER -->
+		<link rel="stylesheet" id="switcher-css" type="text/css" href="__HOME_PUBLIC__/assets/switcher/css/switcher.css" media="all" />
+		<link rel="alternate stylesheet" type="text/css" href="__HOME_PUBLIC__/assets/switcher/css/color1.css" title="color1" media="all" data-default-color="true" />
+		<link rel="alternate stylesheet" type="text/css" href="__HOME_PUBLIC__/assets/switcher/css/color2.css" title="color2" media="all" />
+		<link rel="alternate stylesheet" type="text/css" href="__HOME_PUBLIC__/assets/switcher/css/color3.css" title="color3" media="all" />
+		<link rel="alternate stylesheet" type="text/css" href="__HOME_PUBLIC__/assets/switcher/css/color4.css" title="color4" media="all" />
+		<link rel="alternate stylesheet" type="text/css" href="__HOME_PUBLIC__/assets/switcher/css/color5.css" title="color5" media="all" />
+		<link rel="alternate stylesheet" type="text/css" href="__HOME_PUBLIC__/assets/switcher/css/color6.css" title="color6" media="all" />
 
-	<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
-	<link rel="shortcut icon" href="favicon.ico">
-
-	<link href='https://fonts.googleapis.com/css?family=Roboto:400,300,600,400italic,700' rel='stylesheet' type='text/css'>
-	<link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
-	
-	<!-- Animate.css -->
-	<link rel="stylesheet" href="__HOME_CSS__/animate.css">
-	<!-- Icomoon Icon Fonts-->
-	<link rel="stylesheet" href="__HOME_CSS__/icomoon.css">
-	<!-- Bootstrap  -->
-	<link rel="stylesheet" href="__HOME_CSS__/bootstrap.css">
-	<!-- Owl Carousel -->
-	<link rel="stylesheet" href="__HOME_CSS__/owl.carousel.min.css">
-	<link rel="stylesheet" href="__HOME_CSS__/owl.theme.default.min.css">
-	<!-- Theme style  -->
-	<link rel="stylesheet" href="__HOME_CSS__/style.css">
-
-	<!-- Modernizr JS -->
-	<script src="__HOME_JS__/modernizr-2.6.2.min.js"></script>
-	<!-- FOR IE9 below -->
-	<!--[if lt IE 9]>
-	<script src="__HOME_JS__/respond.min.js"></script>
-	<![endif]-->
+		<!--[if lt IE 9]>
+		<script src="/oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+		<script src="/oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+		<![endif]-->
 
 	</head>
-	<body>
-	<div id="fh5co-page">
-		<a href="#" class="js-fh5co-nav-toggle fh5co-nav-toggle"><i></i></a>
-		<aside id="fh5co-aside" role="complementary" class="border js-fullheight">
+	<body class="m-index" data-scrolling-animations="true" data-equal-height=".b-auto__main-item">
 
-			<h1 id="fh5co-logo"><a href="index.html"><img src="__HOME_IMAGES__/logo-colored.png" alt="Free HTML5 Bootstrap Website Template"></a></h1>
-			<nav id="fh5co-main-menu" role="navigation">
-				<ul>
-					<li class="fh5co-active"><a href="{:U('Home/Index/index')}">首页</a></li>
-					<li><a href="portfolio.html">产品展示</a></li>
-					<li><a href="about.html">关于我们</a></li>
-					<li><a href="contact.html">联系我们</a></li>
-				</ul>
-			</nav>
-
-			<div class="fh5co-footer">
-				<p><small>&copy; 2016 Blend Free HTML5. All Rights Reserved.</span> More Templates <a href="http://www.cssmoban.com/" target="_blank" title="模板之家">模板之家</a> - Collect from <a href="http://www.cssmoban.com/" title="网页模板" target="_blank">网页模板</a></small></p>
-				<ul>
-					<li><a href="#"><i class="icon-facebook"></i></a></li>
-					<li><a href="#"><i class="icon-twitter"></i></a></li>
-					<li><a href="#"><i class="icon-instagram"></i></a></li>
-					<li><a href="#"><i class="icon-linkedin"></i></a></li>
-				</ul>
+		<!-- Loader -->
+		<div id="page-preloader"><span class="spinner"></span></div>
+		<!-- Loader end -->
+		<!-- Start Switcher -->
+		<div class="switcher-wrapper">	
+			<div class="demo_changer">
+				<div class="demo-icon customBgColor"><i class="fa fa-cog fa-spin fa-2x"></i></div>
+				<div class="form_holder">
+					<div class="row">
+						<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+							<div class="predefined_styles">
+								<div class="skin-theme-switcher">
+									<h4>Color</h4>
+									<a href="#" data-switchcolor="color1" class="styleswitch" style="background-color:#f76d2b;"> </a>
+									<a href="#" data-switchcolor="color2" class="styleswitch" style="background-color:#de483d;"> </a>
+									<a href="#" data-switchcolor="color3" class="styleswitch" style="background-color:#228dcb;"> </a>
+									<a href="#" data-switchcolor="color4" class="styleswitch" style="background-color:#00bff3;"> </a>
+									<a href="#" data-switchcolor="color5" class="styleswitch" style="background-color:#2dcc70;"> </a>
+									<a href="#" data-switchcolor="color6" class="styleswitch" style="background-color:#6054c2;"> </a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
 			</div>
+		</div>
+		<!-- End Switcher -->
 
-		</aside>
-        
-
-		<div id="fh5co-main">
-			
-			<div class="fh5co-testimonial">
-				<div class="owl-carousel-fullwidth animate-box" data-animate-effect="fadeInLeft">
-		            <div class="item">
-		            		<img src="http://12266548.s61i.faiusr.com/2/AD0ItNjsBRACGAAg0eS9wgUomLKW-AQwgA842gU.jpg" alt="Free HTML5 Bootstrap Template">
-		            </div>
-		            <div class="item">
-		            	<img src="http://12266548.s61i.faiusr.com/2/AD0ItNjsBRACGAAgmqW-wgUopa_dKTCADzjaBQ.jpg" alt="Free HTML5 Bootstrap Template">
-		            </div>
-	          	</div>
-			</div>
-			
-			<div class="fh5co-gallery">
-				
-				<div class="gallery-item">
-					
-					<a href="single.html" >
-						<div class="gallery-item-element">
-						<img src="http://12266548.s61i.faiusr.com/2/AD0ItNjsBRACGAAg1LO_wgUoqKLK2AMw2AQ4zwM.jpg" alt="Free HTML5 Bootstrap Template by FreeHTML5.co">
-						</div>
-						<span class="overlay">
-							<h2>Nature</h2>
-							<span>14 Photos</span>
-						</span>
-					</a>
-					<h3>这是一个悲伤的日子</h3>
-				</div>
-				<div class="gallery-item">
-					
-					<a href="single.html" >
-						<div class="gallery-item-element">
-						<img src="http://12266548.s61i.faiusr.com/2/AD0ItNjsBRACGAAg1LO_wgUoqKLK2AMw2AQ4zwM.jpg" alt="Free HTML5 Bootstrap Template by FreeHTML5.co">
-						</div>
-						<span class="overlay">
-							<h2>Nature</h2>
-							<span>14 Photos</span>
-						</span>
-					</a>
-					<h3>sssssssssssssssssssssssss</h3>
-				</div>
-				<div class="gallery-item">
-					
-					<a href="single.html" >
-						<div class="gallery-item-element">
-						<img src="http://12266548.s61i.faiusr.com/2/AD0ItNjsBRACGAAg1LO_wgUoqKLK2AMw2AQ4zwM.jpg" alt="Free HTML5 Bootstrap Template by FreeHTML5.co">
-						</div>
-						<span class="overlay">
-							<h2>Nature</h2>
-							<span>14 Photos</span>
-						</span>
-					</a>
-					<h3>sssssssssssssssssssssssss</h3>
-				</div>
-				<div class="gallery-item">
-					
-					<a href="single.html" >
-						<div class="gallery-item-element">
-						<img src="http://12266548.s61i.faiusr.com/2/AD0ItNjsBRACGAAg1LO_wgUoqKLK2AMw2AQ4zwM.jpg" alt="Free HTML5 Bootstrap Template by FreeHTML5.co">
-						</div>
-						<span class="overlay">
-							<h2>Nature</h2>
-							<span>14 Photos</span>
-						</span>
-					</a>
-					<h3>sssssssssssssssssssssssss</h3>
-				</div>
-				
-				
-				
-			</div>
-				
-			
-			<div class="fh5co-narrow-content">
-				<h2 class="fh5co-heading animate-box" data-animate-effect="fadeInLeft">Services</h2>
+		<header class="b-topBar wow slideInDown" data-wow-delay="0.7s">
+			<div class="container">
 				<div class="row">
-					<div class="col-md-6">
-						<div class="fh5co-feature animate-box" data-animate-effect="fadeInLeft">
-							<div class="fh5co-icon">
-								<i class="icon-strategy"></i>
+					
+					
+					<div class="col-md-12">
+						<div class="b-topBar__lang">
+							<div class="dropdown">
+								<a href="#" class="dropdown-toggle" data-toggle='dropdown'>Language</a>
+								<a class="m-langLink dropdown-toggle" data-toggle='dropdown' href="#"><span class="b-topBar__lang-flag m-en"></span>EN<span class="fa fa-caret-down"></span></a>
+								<ul class="dropdown-menu h-lang">
+									<li><a class="m-langLink dropdown-toggle" data-toggle='dropdown' href="#"><span class="b-topBar__lang-flag m-en"></span>EN</a></li>
+									<li><a class="m-langLink dropdown-toggle" data-toggle='dropdown' href="#"><span class="b-topBar__lang-flag m-es"></span>ES</a></li>
+									<li><a class="m-langLink dropdown-toggle" data-toggle='dropdown' href="#"><span class="b-topBar__lang-flag m-de"></span>DE</a></li>
+									<li><a class="m-langLink dropdown-toggle" data-toggle='dropdown' href="#"><span class="b-topBar__lang-flag m-fr"></span>FR</a></li>
+								</ul>
 							</div>
-							<div class="fh5co-text">
-								<h3>Strategy</h3>
-								<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. </p>
-							</div>
-						</div>
-					</div>
-					<div class="col-md-6">
-						<div class="fh5co-feature animate-box" data-animate-effect="fadeInLeft">
-							<div class="fh5co-icon">
-								<i class="icon-telescope"></i>
-							</div>
-							<div class="fh5co-text">
-								<h3>Explore</h3>
-								<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. </p>
-							</div>
-						</div>
-					</div>
-
-					<div class="col-md-6">
-						<div class="fh5co-feature animate-box" data-animate-effect="fadeInLeft">
-							<div class="fh5co-icon">
-								<i class="icon-circle-compass"></i>
-							</div>
-							<div class="fh5co-text">
-								<h3>Direction</h3>
-								<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. </p>
-							</div>
-						</div>
-					</div>
-					<div class="col-md-6">
-						<div class="fh5co-feature animate-box" data-animate-effect="fadeInLeft">
-							<div class="fh5co-icon">
-								<i class="icon-tools-2"></i>
-							</div>
-							<div class="fh5co-text">
-								<h3>Expertise</h3>
-								<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. </p>
-							</div>
-						</div>
-					</div>
-
-				</div>
-			</div>
-
-	
-			
-			<div class="fh5co-counters" style="background-image: url(__HOME_IMAGES__/hero.jpg);" data-stellar-background-ratio="0.5" id="counter-animate">
-				<div class="fh5co-narrow-content animate-box">
-					<div class="row" >
-						<div class="col-md-4 text-center">
-							<span class="fh5co-counter js-counter" data-from="0" data-to="67" data-speed="5000" data-refresh-interval="50"></span>
-							<span class="fh5co-counter-label">Client</span>
-						</div>
-						<div class="col-md-4 text-center">
-							<span class="fh5co-counter js-counter" data-from="0" data-to="130" data-speed="5000" data-refresh-interval="50"></span>
-							<span class="fh5co-counter-label">Photos</span>
-						</div>
-						<div class="col-md-4 text-center">
-							<span class="fh5co-counter js-counter" data-from="0" data-to="27232" data-speed="5000" data-refresh-interval="50"></span>
-							<span class="fh5co-counter-label">Pixels</span>
 						</div>
 					</div>
 				</div>
 			</div>
+		</header><!--b-topBar-->
+
+		<nav class="b-nav">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-3 col-xs-4">
+						<div class="b-nav__logo wow slideInLeft" data-wow-delay="0.3s">
+							<h3><a href="index.html">Auto<span>Club</span></a></h3>
+							<h2><a href="index.html">AUTO DEALER TEMPLATE</a></h2>
+						</div>
+					</div>
+					<div class="col-sm-9 col-xs-8">
+						<div class="b-nav__list wow slideInRight" data-wow-delay="0.3s">
+							<div class="navbar-header">
+								<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#nav">
+									<span class="sr-only">Toggle navigation</span>
+									<span class="icon-bar"></span>
+									<span class="icon-bar"></span>
+									<span class="icon-bar"></span>
+								</button>
+							</div>
+							<div class="collapse navbar-collapse navbar-main-slide" id="nav">
+								<ul class="navbar-nav-menu">
+									<li><a href="index.html">Home</a></li>
+									<li><a href="listings.html">listing</a></li>
+									<li><a href="compare.html">compare</a></li>
+									<li><a href="about.html">About</a></li>
+									<li><a href="article.html">Services</a></li>
+									<li><a href="submit1.html">Shop</a></li>
+									<li><a href="contacts.html">Contact</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</nav><!--b-nav-->
+
+		<section class="b-slider"> 
+			<div id="carousel" class="slide carousel carousel-fade">
+				<div class="carousel-inner">
+					<div class="item active">
+						<img src="__HOME_PUBLIC__/media/main-slider/1.jpg" alt="sliderImg" />
+						<div class="container">
+							<div class="carousel-caption b-slider__info">
+								<h3>Find your dream</h3>
+								<h2>Lamborghini Aventador</h2>
+								<p>Model 2017 <span>$184,900</span></p>
+								<a class="btn m-btn" href="detail.html">see details<span class="fa fa-angle-right"></span></a>
+							</div>
+						</div>
+					</div>
+					<div class="item">
+						<img src="__HOME_PUBLIC__/media/main-slider/2.jpg" alt="sliderImg" />
+						<div class="container">
+							<div class="carousel-caption b-slider__info">
+								<h3>Find your dream</h3>
+								<h2>Lamborghini Aventador</h2>
+								<p>Model 2017 <span>$184,900</span></p>
+								<a class="btn m-btn" href="detail.html">see details<span class="fa fa-angle-right"></span></a>
+							</div>
+						</div>
+					</div>
+					<div class="item">
+						<img src="__HOME_PUBLIC__/media/main-slider/3.jpg"  alt="sliderImg">
+						<div class="container">
+							<div class="carousel-caption b-slider__info">
+								<h3>Find your dream</h3>
+								<h2>Lamborghini Aventador</h2>
+								<p>Model 2017 <span>$184,900</span></p>
+								<a class="btn m-btn" href="detail.html">see details<span class="fa fa-angle-right"></span></a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<a class="carousel-control right" href="#carousel" data-slide="next">
+					<span class="fa fa-angle-right m-control-right"></span>
+				</a>
+				<a class="carousel-control left" href="#carousel" data-slide="prev">
+					<span class="fa fa-angle-left m-control-left"></span>
+				</a>
+			</div>
+		</section><!--b-slider-->
+
 		
 
-			<div class="fh5co-narrow-content">
-				<div class="row">
-					<div class="col-md-4 animate-box" data-animate-effect="fadeInLeft">
-						<h1 class="fh5co-heading-colored">Get in touch</h1>
+		<section class="b-featured">
+			<div class="container">
+				<h2 class="s-title wow zoomInUp" data-wow-delay="0.3s">Featured Vehicles</h2>
+				<div id="carousel-small" class="owl-carousel enable-owl-carousel" data-items="4" data-navigation="true" data-auto-play="true" data-stop-on-hover="true" data-items-desktop="4" data-items-desktop-small="4" data-items-tablet="3" data-items-tablet-small="2">
+					<div>
+						<div class="b-featured__item wow rotateIn" data-wow-delay="0.3s" data-wow-offset="150">
+							<a href="detail.html">
+								<img src="__HOME_PUBLIC__/media/186x113/mers.jpg" alt="mers" />
+								<span class="m-premium">Premium</span>
+							</a>
+							<div class="b-featured__item-price">
+								$184,900
+							</div>
+							<div class="clearfix"></div>
+							<h5><a href="detail.html">MERCEDES-AMG GT / GT S</a></h5>
+							<div class="b-featured__item-count"><span class="fa fa-tachometer"></span>35,000 KM</div>
+							<div class="b-featured__item-links">
+								<a href="#">Used</a>
+								<a href="#">2014</a>
+								<a href="#">Manual</a>
+								<a href="#">Orange</a>
+								<a href="#">Petrol</a>
+							</div>
+						</div>
 					</div>
-				</div>
-				<div class="row">
-					<div class="col-md-12 animate-box" data-animate-effect="fadeInLeft">
-						<p class="fh5co-lead">Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
-						<p><a href="#" class="btn btn-primary btn-outline">Learn More</a></p>
+					<div>
+						<div class="b-featured__item wow rotateIn" data-wow-delay="0.3s" data-wow-offset="150">
+							<a href="detail.html">
+								<img src="__HOME_PUBLIC__/media/186x113/audi.jpg" alt="audi" />
+							</a>
+							<div class="b-featured__item-price">
+								$95,900
+							</div>
+							<div class="clearfix"></div>
+							<h5><a href="detail.html">AUDI R8 SPYDER V-8</a></h5>
+							<div class="b-featured__item-count"><span class="fa fa-tachometer"></span>0.00 KM</div>
+							<div class="b-featured__item-links">
+								<a href="#">Used</a>
+								<a href="#">2017</a>
+								<a href="#">Manual</a>
+								<a href="#">Orange</a>
+								<a href="#">Petrol</a>
+							</div>
+						</div>
 					</div>
-					
+					<div>
+						<div class="b-featured__item wow rotateIn" data-wow-delay="0.3s" data-wow-offset="150">
+							<a href="detail.html">
+								<img src="__HOME_PUBLIC__/media/186x113/aston.jpg" alt="aston" />
+								<span class="m-leasing">LEASING AVAILABLE</span>
+							</a>
+							<div class="b-featured__item-price">
+								$101,025
+							</div>
+							<div class="clearfix"></div>
+							<h5><a href="detail.html">ASTON MARTIN VANTAGE</a></h5>
+							<div class="b-featured__item-count"><span class="fa fa-tachometer"></span>35,000 KM</div>
+							<div class="b-featured__item-links">
+								<a href="#">Used</a>
+								<a href="#">2014</a>
+								<a href="#">Manual</a>
+								<a href="#">Orange</a>
+								<a href="#">Petrol</a>
+							</div>
+						</div>
+					</div>
+					<div>
+						<div class="b-featured__item wow rotateIn" data-wow-delay="0.3s" data-wow-offset="150">
+							<a href="detail.html">
+								<img src="__HOME_PUBLIC__/media/186x113/jaguar.jpg" alt="jaguar" />
+							</a>
+							<div class="b-featured__item-price">
+								$130,825
+							</div>
+							<div class="clearfix"></div>
+							<h5><a href="detail.html">JAGUAR F-TYPE R</a></h5>
+							<div class="b-featured__item-count"><span class="fa fa-tachometer"></span>0.00</div>
+							<div class="b-featured__item-links">
+								<a href="#">Used</a>
+								<a href="#">2017</a>
+								<a href="#">Manual</a>
+								<a href="#">Orange</a>
+								<a href="#">Petrol</a>
+							</div>
+						</div>
+					</div>
+					<div>
+						<div class="b-featured__item wow rotateIn" data-wow-delay="0.3s" data-wow-offset="150">
+							<a href="detail.html">
+								<img src="__HOME_PUBLIC__/media/186x113/mers.jpg" alt="mers" />
+								<span class="m-premium">Premium</span>
+							</a>
+							<div class="b-featured__item-price">
+								$184,900
+							</div>
+							<div class="clearfix"></div>
+							<h5><a href="detail.html">MERCEDES-AMG GT / GT S</a></h5>
+							<div class="b-featured__item-count"><span class="fa fa-tachometer"></span>35,000 KM</div>
+							<div class="b-featured__item-links">
+								<a href="#">Used</a>
+								<a href="#">2014</a>
+								<a href="#">Manual</a>
+								<a href="#">Orange</a>
+								<a href="#">Petrol</a>
+							</div>
+						</div>
+					</div>
+					<div>
+						<div class="b-featured__item wow rotateIn" data-wow-delay="0.3s" data-wow-offset="150">
+							<a href="detail.html">
+								<img src="__HOME_PUBLIC__/media/186x113/audi.jpg" alt="audi" />
+							</a>
+							<div class="b-featured__item-price">
+								$95,900
+							</div>
+							<div class="clearfix"></div>
+							<h5><a href="detail.html">AUDI R8 SPYDER V-8</a></h5>
+							<div class="b-featured__item-count"><span class="fa fa-tachometer"></span>0.00 KM</div>
+							<div class="b-featured__item-links">
+								<a href="#">Used</a>
+								<a href="#">2017</a>
+								<a href="#">Manual</a>
+								<a href="#">Orange</a>
+								<a href="#">Petrol</a>
+							</div>
+						</div>
+					</div>
+					<div>
+						<div class="b-featured__item wow rotateIn" data-wow-delay="0.3s" data-wow-offset="150">
+							<a href="detail.html">
+								<img src="__HOME_PUBLIC__/media/186x113/aston.jpg" alt="aston" />
+								<span class="m-leasing">LEASING AVAILABLE</span>
+							</a>
+							<div class="b-featured__item-price">
+								$101,025
+							</div>
+							<div class="clearfix"></div>
+							<h5><a href="detail.html">ASTON MARTIN VANTAGE</a></h5>
+							<div class="b-featured__item-count"><span class="fa fa-tachometer"></span>35,000 KM</div>
+							<div class="b-featured__item-links">
+								<a href="#">Used</a>
+								<a href="#">2014</a>
+								<a href="#">Manual</a>
+								<a href="#">Orange</a>
+								<a href="#">Petrol</a>
+							</div>
+						</div>
+					</div>
+					<div>
+						<div class="b-featured__item wow rotateIn" data-wow-delay="0.3s" data-wow-offset="150">
+							<a href="detail.html">
+								<img src="__HOME_PUBLIC__/media/186x113/jaguar.jpg" alt="jaguar" />
+							</a>
+							<div class="b-featured__item-price">
+								$130,825
+							</div>
+							<div class="clearfix"></div>
+							<h5><a href="detail.html">JAGUAR F-TYPE R</a></h5>
+							<div class="b-featured__item-count"><span class="fa fa-tachometer"></span>0.00</div>
+							<div class="b-featured__item-links">
+								<a href="#">Used</a>
+								<a href="#">2017</a>
+								<a href="#">Manual</a>
+								<a href="#">Orange</a>
+								<a href="#">Petrol</a>
+							</div>
+						</div>
+					</div>
 				</div>
 			</div>
+		</section><!--b-featured-->
 
-		</div>
-	</div>
+		<section class="b-welcome">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-5 col-md-offset-2 col-sm-6 col-xs-12">
+						<div class="b-welcome__text wow fadeInLeft" data-wow-delay="0.3s" data-wow-offset="100">
+							<h2>WORLD'S LEADING CAR DEALER</h2>
+							<h3>WELCOME TO AUTOCLUB</h3>
+							<p>Curabitur libero. Donec facilisis velit eudsl est. Phasellus consequat. Aenean vita quam. Vivamus et nunc. Nunc consequat sem velde metus imperdiet lacinia. Dui estter neque molestie necd dignissim ac hendrerit quis purus. Etiam sit amet vec convallis massa scelerisque mattis. Sed placerat leo nec.</p>
+							<p>Ipsum midne ultrices magn eu tempor quam dolor eustrl sem. Donec quis dolel Donec pede quam placerat alterl tristique faucibus posuere lobortis.</p>
+							<ul>
+								<li><span class="fa fa-check"></span>Donec facilisis velit eu est phasellus consequat </li>
+								<li><span class="fa fa-check"></span>Aenean vitae quam. Vivamus et nunc nunc consequat</li>
+								<li><span class="fa fa-check"></span>Sem vel metus imperdiet lacinia enean </li>
+								<li><span class="fa fa-check"></span>Dapibus aliquam augue fusce eleifend quisque tels</li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-md-5 col-sm-6 col-xs-12">
+						<div class="b-welcome__services wow fadeInRight" data-wow-delay="0.3s" data-wow-offset="100">
+							<div class="row">
+								<div class="col-xs-6 m-padding">
+									<div class="b-welcome__services-auto">
+										<div class="b-welcome__services-img m-auto">
+											<span class="fa fa-cab"></span>
+										</div>
+										<h3>AUTO LOANS</h3>
+									</div>
+								</div>
+								<div class="col-xs-6 m-padding">
+									<div class="b-welcome__services-trade">
+										<div class="b-welcome__services-img m-trade">
+											<span class="fa fa-male"></span>
+										</div>
+										<h3>Trade-Ins</h3>
+									</div>
+								</div>
+								<div class="col-xs-12 text-center">
+									<span class="b-welcome__services-circle"></span>
+								</div>
+								<div class="col-xs-6 m-padding">
+									<div class="b-welcome__services-buying">
+										<div class="b-welcome__services-img m-buying">
+											<span class="fa fa-book"></span>
+										</div>
+										<h3>Buying guide</h3>
+									</div>
+								</div>
+								<div class="col-xs-6 m-padding">
+									<div class="b-welcome__services-support">
+										<div class="b-welcome__services-img m-support">
+											<svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+												width="45px" height="45px" viewBox="0 0 612 612" style="enable-background:new 0 0 612 612;" xml:space="preserve">
+												<g>
+													<path d="M257.938,336.072c0,17.355-14.068,31.424-31.423,31.424c-17.354,0-31.422-14.068-31.422-31.424
+														c0-17.354,14.068-31.423,31.422-31.423C243.87,304.65,257.938,318.719,257.938,336.072z M385.485,304.65
+														c-17.354,0-31.423,14.068-31.423,31.424c0,17.354,14.069,31.422,31.423,31.422c17.354,0,31.424-14.068,31.424-31.422
+														C416.908,318.719,402.84,304.65,385.485,304.65z M612,318.557v59.719c0,29.982-24.305,54.287-54.288,54.287h-39.394
+														C479.283,540.947,379.604,606.412,306,606.412s-173.283-65.465-212.318-173.85H54.288C24.305,432.562,0,408.258,0,378.275v-59.719
+														c0-20.631,11.511-38.573,28.46-47.758c0.569-84.785,25.28-151.002,73.553-196.779C149.895,28.613,218.526,5.588,306,5.588
+														c87.474,0,156.105,23.025,203.987,68.43c48.272,45.777,72.982,111.995,73.553,196.779C600.489,279.983,612,297.925,612,318.557z
+														M497.099,336.271c0-13.969-0.715-27.094-1.771-39.812c-24.093-22.043-67.832-38.769-123.033-44.984
+														c7.248,8.15,13.509,18.871,17.306,32.983c-33.812-26.637-100.181-20.297-150.382-79.905c-2.878-3.329-5.367-6.51-7.519-9.417
+														c-0.025-0.035-0.053-0.062-0.078-0.096l0.006,0.002c-8.931-12.078-11.976-19.262-12.146-11.31
+														c-1.473,68.513-50.034,121.925-103.958,129.46c-0.341,7.535-0.62,15.143-0.62,23.08c0,28.959,4.729,55.352,12.769,79.137
+														c30.29,36.537,80.312,46.854,124.586,49.59c8.219-13.076,26.66-22.205,48.136-22.205c29.117,0,52.72,16.754,52.72,37.424
+														c0,20.668-23.604,37.422-52.72,37.422c-22.397,0-41.483-9.93-49.122-23.912c-30.943-1.799-64.959-7.074-95.276-21.391
+														C198.631,535.18,264.725,568.41,306,568.41C370.859,568.41,497.099,486.475,497.099,336.271z M550.855,264.269
+														C547.4,116.318,462.951,38.162,306,38.162S64.601,116.318,61.145,264.269h20.887c7.637-49.867,23.778-90.878,48.285-122.412
+														C169.37,91.609,228.478,66.13,306,66.13c77.522,0,136.63,25.479,175.685,75.727c24.505,31.533,40.647,72.545,48.284,122.412
+														H550.855L550.855,264.269z">
+												</g>
+											</svg>
 
-	<!-- jQuery -->
-	<script src="__HOME_JS__/jquery.min.js"></script>
-	<!-- jQuery Easing -->
-	<script src="__HOME_JS__/jquery.easing.1.3.js"></script>
-	<!-- Bootstrap -->
-	<script src="__HOME_JS__/bootstrap.min.js"></script>
-	<!-- Carousel -->
-	<script src="__HOME_JS__/owl.carousel.min.js"></script>
-	<!-- Stellar -->
-	<script src="__HOME_JS__/jquery.stellar.min.js"></script>
-	<!-- Waypoints -->
-	<script src="__HOME_JS__/jquery.waypoints.min.js"></script>
-	<!-- Counters -->
-	<script src="__HOME_JS__/jquery.countTo.js"></script>
-	
-	
-	<!-- MAIN JS -->
-	<script src="__HOME_JS__/main.js"></script>
+										</div>
+										<h3>24/7 support</h3>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section><!--b-welcome-->
+
+		<section class="b-world">
+			<div class="container">
+				<h6 class="wow zoomInLeft" data-wow-delay="0.3s" data-wow-offset="100">EVERYTHING YOU NEED TO KNOW</h6><br />
+				<h2 class="s-title wow zoomInRight" data-wow-delay="0.3s" data-wow-offset="100">THE WORLD OF AUTOS</h2>
+				<div class="row">
+					<div class="col-sm-4 col-xs-12">
+						<div class="b-world__item wow zoomInLeft" data-wow-delay="0.3s" data-wow-offset="100">
+							<img class="img-responsive" src="__HOME_PUBLIC__/media/370x200/wolks.jpg" alt="wolks" />
+							<div class="b-world__item-val">
+								<span class="b-world__item-val-title">FIRST DRIVE REVIEW</span>
+								<div class="b-world__item-val-circles">
+									<span></span>
+									<span></span>
+									<span></span>
+									<span></span>
+									<span class="m-empty"></span>
+								</div>
+								<span class="b-world__item-num">4.1</span>
+							</div>
+							<h2>2017 Volkswagen Golf R SportWagen</h2>
+							<p>Curabitur libero. Donec facilisis velit eu est. Phasellus cons quat. Aenean vitae quam. Vivamus et nunc. Nunc consequ
+								sem velde metus imperdiet lacinia.</p>
+							<a href="article.html" class="btn m-btn">READ MORE<span class="fa fa-angle-right"></span></a>
+						</div>
+					</div>
+					<div class="col-sm-4 col-xs-12">
+						<div class="b-world__item wow zoomInUp" data-wow-delay="0.3s" data-wow-offset="100">
+							<img class="img-responsive"  src="__HOME_PUBLIC__/media/370x200/mazda.jpg" alt="mazda" />
+							<div class="b-world__item-val">
+								<span class="b-world__item-val-title">INSTRUMENTED TEST</span>
+								<div class="b-world__item-val-circles">
+									<span></span>
+									<span></span>
+									<span></span>
+									<span></span>
+									<span class="m-halfEmpty"></span>
+								</div>
+								<span class="b-world__item-num">4.5</span>
+							</div>
+							<h2>2017 Mazda CX-5 2.5L AWD</h2>
+							<p>Curabitur libero. Donec facilisis velit eu est. Phasellus cons quat. Aenean vitae quam. Vivamus et nunc. Nunc consequ
+								sem velde metus imp         erdiet lacinia.</p>
+							<a href="article.html" class="btn m-btn m-active">READ MORE<span class="fa fa-angle-right"></span></a>
+						</div>
+					</div>
+					<div class="col-sm-4 col-xs-12">
+						<div class="b-world__item j-item wow zoomInRight" data-wow-delay="0.3s" data-wow-offset="100">
+							<img class="img-responsive"  src="__HOME_PUBLIC__/media/370x200/chevrolet.jpg" alt="chevrolet" />
+							<div class="b-world__item-val">
+								<span class="b-world__item-val-title">BUYERS INFO</span>
+								<div class="b-world__item-val-circles">
+									<span></span>
+									<span></span>
+									<span></span>
+									<span></span>
+									<span></span>
+								</div>
+								<span class="b-world__item-num">5.0</span>
+							</div>
+							<h2>Advantages of Buying New or Used Vehicle</h2>
+							<p>Curabitur libero. Donec facilisis velit eu est. Phasellus cons quat. Aenean vitae quam. Vivamus et nunc. Nunc consequ
+								sem velde metus imp         erdiet lacinia.</p>
+							<a href="article.html" class="btn m-btn">READ MORE<span class="fa fa-angle-right"></span></a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section><!--b-world-->
+
+		<section class="b-asks">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-6 col-sm-10 col-sm-offset-1 col-md-offset-0 col-xs-12">
+						<div class="b-asks__first wow zoomInLeft" data-wow-delay="0.3s" data-wow-offset="100">
+							<div class="b-asks__first-circle">
+								<span class="fa fa-search"></span>
+							</div>
+							<div class="b-asks__first-info">
+								<h2>ARE YOU LOOKING FOR A CAR?</h2>
+								<p>Search Our Inventory With Thousands Of Cars  And More 
+									Cars Are Adding On Daily Basis</p>
+							</div>
+							<div class="b-asks__first-arrow">
+								<a href="listingsTwo.html"><span class="fa fa-angle-right"></span></a>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-6 col-sm-10 col-sm-offset-1 col-xs-12 col-md-offset-0">
+						<div class="b-asks__first m-second wow zoomInRight" data-wow-delay="0.3s" data-wow-offset="100">
+							<div class="b-asks__first-circle">
+								<span class="fa fa-usd"></span>
+							</div>
+							<div class="b-asks__first-info">
+								<h2>DO YOU WANT TO SELL A CAR?</h2>
+								<p>Search Our Inventory With Thousands Of Cars  And More 
+									Cars Are Adding On Daily Basis</p>
+							</div>
+							<div class="b-asks__first-arrow">
+								<a href="listingsTwo.html"><span class="fa fa-angle-right"></span></a>
+							</div>
+						</div>
+					</div>
+					<div class="col-xs-12">
+						<p class="b-asks__call wow zoomInUp" data-wow-delay="0.3s" data-wow-offset="100">QUESTIONS? CALL US  : <span>1-800- 624-5462</span></p>
+					</div>
+				</div>
+			</div>
+		</section><!--b-asks-->
+
+		<section class="b-auto">
+			<div class="container">
+				<h5 class="s-titleBg wow zoomInLeft" data-wow-delay="0.3s" data-wow-offset="100">GIVING OUR CUSTOMERS BEST DEALS</h5><br />
+				<h2 class="s-title wow zoomInRight" data-wow-delay="0.3s" data-wow-offset="100">BEST OFFERS FROM AUTOCLUB</h2>
+				<div class="row">
+					<div class="col-xs-5 col-sm-4 col-md-3">
+						<aside class="b-auto__main-nav wow zoomInLeft" data-wow-delay="0.3s" data-wow-offset="100">
+							<ul>
+								<li class="active"><a href="#">All Manufacturers</a><span class="fa fa-angle-right"></span></li>
+								<li><a href="#">Chevrolet</a></li>
+								<li><a href="#">Honda</a></li>
+								<li><a href="#">Toyota</a></li>
+								<li><a href="#">Bmw</a></li>
+								<li><a href="#">Volkswagen</a></li>
+								<li><a href="#">Ferrari</a></li>
+								<li><a href="#">Audi</a></li>
+							</ul>
+							<div class="owl-buttons">
+								<div class="owl-prev j-tab" data-to='#first'></div>
+								<div class="owl-next j-tab" data-to='#second'></div>
+							</div>
+						</aside>
+					</div>
+					<div class="col-md-9 col-sm-8 col-xs-7">
+						<div class="b-auto__main">
+							<div class="col-md-11 col-md-offset-1 col-xs-12">
+								<a href="#"  class="b-auto__main-toggle s-lineDownCenter m-active j-tab wow zoomInLeft" data-wow-delay="0.3s" data-wow-offset="100" data-to="#first">MOST RESEARCHED MANUFACTURERS</a>
+								<a href="#" class="b-auto__main-toggle j-tab wow zoomInRight" data-wow-delay="0.3s" data-wow-offset="100" data-to="#second">LATEST VEHICLES ON SALE</a>
+							</div>
+							<div class="clearfix"></div>
+							<div class="row m-margin" id="first">
+								<div class="col-md-4 col-sm-6 col-xs-12">
+									<div class="b-auto__main-item wow slideInUp" data-wow-delay="0.3s" data-wow-offset="100">
+										<img class="img-responsive"  src="__HOME_PUBLIC__/media/270x150/acura.jpg" alt="mazda" />
+										<div class="b-world__item-val">
+											<span class="b-world__item-val-title">REGISTERED <span>2014</span></span>
+										</div>
+										<h2><a href="detail.html">Acura RLX Sport Hybrid</a></h2>
+										<div class="b-auto__main-item-info">
+											<span class="m-price">
+												$44,380
+											</span>
+											<span class="m-number">
+												<span class="fa fa-tachometer"></span>35,000 KM
+											</span>
+										</div>
+										<div class="b-featured__item-links m-auto">
+											<a href="#">Used</a>
+											<a href="#">2014</a>
+											<a href="#">Manual</a>
+											<a href="#">Orange</a>
+											<a href="#">Petrol</a>
+										</div>
+									</div>
+								</div>
+								<div class="col-md-4 col-sm-6 col-xs-12">
+									<div class="b-auto__main-item wow slideInUp" data-wow-delay="0.3s" data-wow-offset="100">
+										<img class="img-responsive"  src="__HOME_PUBLIC__/media/270x150/nissan.jpg" alt="mazda" />
+										<div class="b-world__item-val">
+											<span class="b-world__item-val-title">REGISTERED <span>2014</span></span>
+										</div>
+										<h2><a href="detail.html">2017 Nissan Juke</a></h2>
+										<div class="b-auto__main-item-info">
+											<span class="m-price">
+												$95,900
+											</span>
+											<span class="m-number">
+												<span class="fa fa-tachometer"></span>12,000 KM
+											</span>
+										</div>
+										<div class="b-featured__item-links m-auto">
+											<a href="#">Used</a>
+											<a href="#">2014</a>
+											<a href="#">Manual</a>
+											<a href="#">Orange</a>
+											<a href="#">Petrol</a>
+										</div>
+									</div>
+								</div>
+								<div class="col-md-4 col-sm-6 col-xs-12">
+									<div class="b-auto__main-item wow slideInUp" data-wow-delay="0.3s" data-wow-offset="100">
+										<img class="img-responsive"  src="__HOME_PUBLIC__/media/270x150/acura2016.jpg" alt="mazda" />
+										<div class="b-world__item-val">
+											<span class="b-world__item-val-title">REGISTERED <span>2014</span></span>
+										</div>
+										<h2><a href="detail.html">2017 Acura NSX </a></h2>
+										<div class="b-auto__main-item-info">
+											<span class="m-price">
+												$28,995
+											</span>
+											<span class="m-number">
+												<span class="fa fa-tachometer"></span>5,000 KM
+											</span>
+										</div>
+										<div class="b-featured__item-links m-auto">
+											<a href="#">Used</a>
+											<a href="#">2014</a>
+											<a href="#">Manual</a>
+											<a href="#">Orange</a>
+											<a href="#">Petrol</a>
+										</div>
+									</div>
+								</div>
+								<div class="col-md-4 col-sm-6 col-xs-12">
+									<div class="b-auto__main-item wow slideInUp" data-wow-delay="0.3s" data-wow-offset="100">
+										<img class="img-responsive"  src="__HOME_PUBLIC__/media/270x150/amg.jpg" alt="mazda" />
+										<div class="b-world__item-val">
+											<span class="b-world__item-val-title">REGISTERED <span>2014</span></span>
+										</div>
+										<h2><a href="detail.html">2017 Mercedes-AMG C63</a></h2>
+										<div class="b-auto__main-item-info">
+											<span class="m-price">
+												$95,900
+											</span>
+											<span class="m-number">
+												<span class="fa fa-tachometer"></span>12,000 KM
+											</span>
+										</div>
+										<div class="b-featured__item-links m-auto">
+											<a href="#">Used</a>
+											<a href="#">2014</a>
+											<a href="#">Manual</a>
+											<a href="#">Orange</a>
+											<a href="#">Petrol</a>
+										</div>
+									</div>
+								</div>
+								<div class="col-md-4 col-sm-6 col-xs-12">
+									<div class="b-auto__main-item wow slideInUp" data-wow-delay="0.3s" data-wow-offset="100">
+										<img class="img-responsive"  src="__HOME_PUBLIC__/media/270x150/brabus.jpg" alt="mazda" />
+										<div class="b-world__item-val">
+											<span class="b-world__item-val-title">REGISTERED <span>2014</span></span>
+										</div>
+										<h2><a href="detail.html">Brabus 850 6.0 Biturbo Coupe</a></h2>
+										<div class="b-auto__main-item-info">
+											<span class="m-price">
+												$28,995
+											</span>
+											<span class="m-number">
+												<span class="fa fa-tachometer"></span>5,000 KM
+											</span>
+										</div>
+										<div class="b-featured__item-links m-auto">
+											<a href="#">Used</a>
+											<a href="#">2014</a>
+											<a href="#">Manual</a>
+											<a href="#">Orange</a>
+											<a href="#">Petrol</a>
+										</div>
+									</div>
+								</div>
+								<div class="col-md-4 col-sm-6 col-xs-12">
+									<div class="b-auto__main-item wow slideInUp" data-wow-delay="0.3s" data-wow-offset="100">
+										<img class="img-responsive"  src="__HOME_PUBLIC__/media/270x150/range.jpg" alt="mazda" />
+										<div class="b-world__item-val">
+											<span class="b-world__item-val-title">REGISTERED <span>2014</span></span>
+										</div>
+										<h2><a href="detail.html">Land Rover Range Rover</a></h2>
+										<div class="b-auto__main-item-info">
+											<span class="m-price">
+												$44,380
+											</span>
+											<span class="m-number">
+												<span class="fa fa-tachometer"></span>35,000 KM
+											</span>
+										</div>
+										<div class="b-featured__item-links m-auto">
+											<a href="#">Used</a>
+											<a href="#">2014</a>
+											<a href="#">Manual</a>
+											<a href="#">Orange</a>
+											<a href="#">Petrol</a>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="row m-margin" id="second">
+								<div class="col-md-4 col-sm-6 col-xs-12">
+									<div class="b-auto__main-item wow slideInUp" data-wow-delay="0.3s" data-wow-offset="100">
+										<img class="img-responsive"  src="__HOME_PUBLIC__/media/270x150/acura.jpg" alt="mazda" />
+										<div class="b-world__item-val">
+											<span class="b-world__item-val-title">REGISTERED <span>2014</span></span>
+										</div>
+										<h2><a href="detail.html">Acura RLX Sport Hybrid</a></h2>
+										<div class="b-auto__main-item-info">
+											<span class="m-price">
+												$44,380
+											</span>
+											<span class="m-number">
+												<span class="fa fa-tachometer"></span>35,000 KM
+											</span>
+										</div>
+										<div class="b-featured__item-links m-auto">
+											<a href="#">Used</a>
+											<a href="#">2014</a>
+											<a href="#">Manual</a>
+											<a href="#">Orange</a>
+											<a href="#">Petrol</a>
+										</div>
+									</div>
+								</div>
+								<div class="col-md-4 col-sm-6 col-xs-12">
+									<div class="b-auto__main-item wow slideInUp" data-wow-delay="0.3s" data-wow-offset="100">
+										<img class="img-responsive"  src="__HOME_PUBLIC__/media/270x150/acura.jpg" alt="mazda" />
+										<div class="b-world__item-val">
+											<span class="b-world__item-val-title">REGISTERED <span>2014</span></span>
+										</div>
+										<h2><a href="detail.html">Acura RLX Sport Hybrid</a></h2>
+										<div class="b-auto__main-item-info">
+											<span class="m-price">
+												$44,380
+											</span>
+											<span class="m-number">
+												<span class="fa fa-tachometer"></span>35,000 KM
+											</span>
+										</div>
+										<div class="b-featured__item-links m-auto">
+											<a href="#">Used</a>
+											<a href="#">2014</a>
+											<a href="#">Manual</a>
+											<a href="#">Orange</a>
+											<a href="#">Petrol</a>
+										</div>
+									</div>
+								</div>
+								<div class="col-md-4 col-sm-6 col-xs-12">
+									<div class="b-auto__main-item wow slideInUp" data-wow-delay="0.3s" data-wow-offset="100">
+										<img class="img-responsive"  src="__HOME_PUBLIC__/media/270x150/acura.jpg" alt="mazda" />
+										<div class="b-world__item-val">
+											<span class="b-world__item-val-title">REGISTERED <span>2014</span></span>
+										</div>
+										<h2><a href="detail.html">Acura RLX Sport Hybrid</a></h2>
+										<div class="b-auto__main-item-info">
+											<span class="m-price">
+												$44,380
+											</span>
+											<span class="m-number">
+												<span class="fa fa-tachometer"></span>35,000 KM
+											</span>
+										</div>
+										<div class="b-featured__item-links m-auto">
+											<a href="#">Used</a>
+											<a href="#">2014</a>
+											<a href="#">Manual</a>
+											<a href="#">Orange</a>
+											<a href="#">Petrol</a>
+										</div>
+									</div>
+								</div>
+								<div class="col-md-4 col-sm-6 col-xs-12">
+									<div class="b-auto__main-item wow slideInUp" data-wow-delay="0.3s" data-wow-offset="100">
+										<img class="img-responsive"  src="__HOME_PUBLIC__/media/270x150/acura.jpg" alt="mazda" />
+										<div class="b-world__item-val">
+											<span class="b-world__item-val-title">REGISTERED <span>2014</span></span>
+										</div>
+										<h2><a href="detail.html">Acura RLX Sport Hybrid</a></h2>
+										<div class="b-auto__main-item-info">
+											<span class="m-price">
+												$44,380
+											</span>
+											<span class="m-number">
+												<span class="fa fa-tachometer"></span>35,000 KM
+											</span>
+										</div>
+										<div class="b-featured__item-links m-auto">
+											<a href="#">Used</a>
+											<a href="#">2014</a>
+											<a href="#">Manual</a>
+											<a href="#">Orange</a>
+											<a href="#">Petrol</a>
+										</div>
+									</div>
+								</div>
+								<div class="col-md-4 col-sm-6 col-xs-12">
+									<div class="b-auto__main-item wow slideInUp" data-wow-delay="0.3s" data-wow-offset="100">
+										<img class="img-responsive"  src="__HOME_PUBLIC__/media/270x150/acura.jpg" alt="mazda" />
+										<div class="b-world__item-val">
+											<span class="b-world__item-val-title">REGISTERED <span>2014</span></span>
+										</div>
+										<h2><a href="detail.html">Acura RLX Sport Hybrid</a></h2>
+										<div class="b-auto__main-item-info">
+											<span class="m-price">
+												$44,380
+											</span>
+											<span class="m-number">
+												<span class="fa fa-tachometer"></span>35,000 KM
+											</span>
+										</div>
+										<div class="b-featured__item-links m-auto">
+											<a href="#">Used</a>
+											<a href="#">2014</a>
+											<a href="#">Manual</a>
+											<a href="#">Orange</a>
+											<a href="#">Petrol</a>
+										</div>
+									</div>
+								</div>
+								<div class="col-md-4 col-sm-6 col-xs-12">
+									<div class="b-auto__main-item wow slideInUp" data-wow-delay="0.3s" data-wow-offset="100">
+										<img class="img-responsive"  src="__HOME_PUBLIC__/media/270x150/acura.jpg" alt="mazda" />
+										<div class="b-world__item-val">
+											<span class="b-world__item-val-title">REGISTERED <span>2014</span></span>
+										</div>
+										<h2><a href="detail.html">Acura RLX Sport Hybrid</a></h2>
+										<div class="b-auto__main-item-info">
+											<span class="m-price">
+												$44,380
+											</span>
+											<span class="m-number">
+												<span class="fa fa-tachometer"></span>35,000 KM
+											</span>
+										</div>
+										<div class="b-featured__item-links m-auto">
+											<a href="#">Used</a>
+											<a href="#">2014</a>
+											<a href="#">Manual</a>
+											<a href="#">Orange</a>
+											<a href="#">Petrol</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section><!--b-auto-->
+
+		<section class="b-count">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-11 col-xs-12 percent-blocks m-main" data-waypoint-scroll="true">
+						<div class="row">
+							<div class="col-sm-3 col-xs-6">
+								<div class="b-count__item">
+									<div class="b-count__item-circle">
+										<span class="fa fa-car"></span>
+									</div>
+									<div class="chart" data-percent="5000">
+										<h2  class="percent">5000</h2>
+									</div>
+									<h5>vehicles in stock</h5>
+								</div>
+							</div>
+							<div class="col-sm-3 col-xs-6">
+								<div class="b-count__item">
+									<div class="b-count__item-circle">
+										<span class="fa fa-users"></span>
+									</div>
+									<div class="chart" data-percent="3100">
+										<h2  class="percent">3100</h2>
+									</div>
+									<h5>HAPPY CUSTOMER REVIEWS</h5>
+								</div>
+							</div>
+							<div class="col-sm-3 col-xs-6">
+								<div class="b-count__item">
+									<div class="b-count__item-circle">
+										<span class="fa fa-building-o"></span>
+									</div>
+									<div class="chart" data-percent="54">
+										<h2  class="percent">54</h2>
+									</div>
+									<h5>DEALER BRANCHES</h5>
+								</div>
+							</div>
+							<div class="col-sm-3 col-xs-6">
+								<div class="b-count__item j-last">
+									<div class="b-count__item-circle">
+										<span class="fa fa-suitcase"></span>
+									</div>
+									<div class="chart" data-percent="547">
+										<h2  class="percent">547</h2>
+									</div>
+									<h5>FREE PARTS GIVEN</h5>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section><!--b-count-->
+
+		<section class="b-contact">
+			<div class="container">
+				<div class="row wow zoomInLeft" data-wow-delay="0.3s" data-wow-offset="100">
+					<div class="col-xs-4">
+						<div class="b-contact-title">
+							<h5>LATEST NEWS &amp; DEALS</h5><br />
+							<h2>NEWSLETTER SIGNUP</h2>
+						</div>
+					</div>
+					<div class="col-xs-8">
+						<div class="b-contact__form">
+							<p>WE SEND GREAT DEALS AND LATEST AUTO NEWS TO OUR SUBSCRIBED USERS EVERY WEEK. ITS FREE SO SUBSCRIBE TODAY!</p>
+							<form action="" method="POST">
+								<div><span class="fa fa-user"></span><input type="text" name="user" value="" placeholder="Your Name" /></div>
+								<div><span class="fa fa-envelope"></span><input type="text" name="email" value="" placeholder="Your Email" /></div>
+								<button type="submit"><span class="fa fa-angle-right"></span></button>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section><!--b-contact-->
+
+		<section class="b-review">
+			<div class="container">
+				<div class="col-sm-10 col-sm-offset-1 col-xs-12">
+					<div id="carousel-small-rev" class="owl-carousel enable-owl-carousel" data-items="1" data-navigation="true" data-auto-play="true" data-stop-on-hover="true" data-items-desktop="1" data-items-desktop-small="1" data-items-tablet="1" data-items-tablet-small="1">
+						<div class="b-review__main">
+							<div class="b-review__main-person">
+								<div class="b-review__main-person-inside">
+								</div>
+							</div>
+							<h5><span>DONALD BROOKS</span>, Customer, Ferrari 488 GTB 2 Owner<em>"</em></h5>
+							<p>Donec facilisis velit eust. Phasellus cons quat. Aenean vitae quam. Vivamus et nunc. Nunc consequsem
+								velde metus imperdiet lacinia.  Nam rutrum congue diam. Vestibulum acda risus eros auctor egestas. Morbids sem magna, viverra quis sollicitudin quis consectetuer quis nec magna.</p>
+						</div>
+						<div class="b-review__main">
+							<div class="b-review__main-person">
+								<div class="b-review__main-person-inside">
+								</div>
+							</div>
+							<h5><span>DONALD BROOKS</span>, Customer, Ferrari 488 GTB 2 Owner<em>"</em></h5>
+							<p>Donec facilisis velit eust. Phasellus cons quat. Aenean vitae quam. Vivamus et nunc. Nunc consequsem
+								velde metus imperdiet lacinia.  Nam rutrum congue diam. Vestibulum acda risus eros auctor egestas. Morbids sem magna, viverra quis sollicitudin quis consectetuer quis nec magna.</p>
+						</div>
+						<div class="b-review__main">
+							<div class="b-review__main-person">
+								<div class="b-review__main-person-inside">
+								</div>
+							</div>
+							<h5><span>DONALD BROOKS</span>, Customer, Ferrari 488 GTB 2 Owner<em>"</em></h5>
+							<p>Donec facilisis velit eust. Phasellus cons quat. Aenean vitae quam. Vivamus et nunc. Nunc consequsem
+								velde metus imperdiet lacinia.  Nam rutrum congue diam. Vestibulum acda risus eros auctor egestas. Morbids sem magna, viverra quis sollicitudin quis consectetuer quis nec magna.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<img src="__HOME_IMAGES__/backgrounds/reviews.jpg" alt="" class="img-responsive center-block" />
+		</section><!--b-review-->
+
+		<div class="b-features">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-9 col-md-offset-3 col-xs-6 col-xs-offset-6">
+						<ul class="b-features__items">
+							<li class="wow zoomInUp" data-wow-delay="0.3s" data-wow-offset="100">Low Prices, No Haggling</li>
+							<li class="wow zoomInUp" data-wow-delay="0.3s" data-wow-offset="100">Largest Car Dealership</li>
+							<li class="wow zoomInUp" data-wow-delay="0.3s" data-wow-offset="100">Multipoint Safety Check</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div><!--b-features-->
+
+		<div class="b-info">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-3 col-xs-6">
+						<aside class="b-info__aside wow zoomInLeft" data-wow-delay="0.3s">
+							<article class="b-info__aside-article">
+								<h3>OPENING HOURS</h3>
+								<div class="b-info__aside-article-item">
+									<h6>Sales Department</h6>
+									<p>Mon-Sat : 8:00am - 5:00pm<br />
+										Sunday is closed</p>
+								</div>
+								<div class="b-info__aside-article-item">
+									<h6>Service Department</h6>
+									<p>Mon-Sat : 8:00am - 5:00pm<br />
+										Sunday is closed</p>
+								</div>
+							</article>
+							<article class="b-info__aside-article">
+								<h3>About us</h3>
+								<p>Vestibulum varius od lio eget conseq
+									uat blandit, lorem auglue comm lodo 
+									nisl non ultricies lectus nibh mas lsa 
+									Duis scelerisque aliquet. Ante donec
+									libero pede porttitor dacu msan esct
+									venenatis quis.</p>
+							</article>
+							<a href="about.html" class="btn m-btn">Read More<span class="fa fa-angle-right"></span></a>
+						</aside>
+					</div>
+					<div class="col-md-3 col-xs-6">
+						<div class="b-info__latest">
+							<h3>LATEST AUTOS</h3>
+							<div class="b-info__latest-article wow zoomInUp" data-wow-delay="0.3s">
+								<div class="b-info__latest-article-photo m-audi"></div>
+								<div class="b-info__latest-article-info">
+									<h6><a href="detail.html">MERCEDES-AMG GT S</a></h6>
+									<p><span class="fa fa-tachometer"></span> 35,000 KM</p>
+								</div>
+							</div>
+							<div class="b-info__latest-article wow zoomInUp" data-wow-delay="0.3s">
+								<div class="b-info__latest-article-photo m-audiSpyder"></div>
+								<div class="b-info__latest-article-info">
+									<h6><a href="#">AUDI R8 SPYDER V-8</a></h6>
+									<p><span class="fa fa-tachometer"></span> 35,000 KM</p>
+								</div>
+							</div>
+							<div class="b-info__latest-article wow zoomInUp" data-wow-delay="0.3s">
+								<div class="b-info__latest-article-photo m-aston"></div>
+								<div class="b-info__latest-article-info">
+									<h6><a href="#">ASTON MARTIN VANTAGE</a></h6>
+									<p><span class="fa fa-tachometer"></span> 35,000 KM</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-3 col-xs-6">
+						<div class="b-info__twitter">
+							<h3>from twitter</h3>
+							<div class="b-info__twitter-article wow zoomInUp" data-wow-delay="0.3s">
+								<div class="b-info__twitter-article-icon"><span class="fa fa-twitter"></span></div>
+								<div class="b-info__twitter-article-content">
+									<p>Duis scelerisque aliquet ante donec libero pede porttitor dacu</p>
+									<span>20 minutes ago</span>
+								</div>
+							</div>
+							<div class="b-info__twitter-article wow zoomInUp" data-wow-delay="0.3s">
+								<div class="b-info__twitter-article-icon"><span class="fa fa-twitter"></span></div>
+								<div class="b-info__twitter-article-content">
+									<p>Duis scelerisque aliquet ante donec libero pede porttitor dacu</p>
+									<span>20 minutes ago</span>
+								</div>
+							</div>
+							<div class="b-info__twitter-article wow zoomInUp" data-wow-delay="0.3s">
+								<div class="b-info__twitter-article-icon"><span class="fa fa-twitter"></span></div>
+								<div class="b-info__twitter-article-content">
+									<p>Duis scelerisque aliquet ante donec libero pede porttitor dacu</p>
+									<span>20 minutes ago</span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-3 col-xs-6">
+						<address class="b-info__contacts wow zoomInUp" data-wow-delay="0.3s">
+							<p>contact us</p>
+							<div class="b-info__contacts-item">
+								<span class="fa fa-map-marker"></span>
+								<em>202 W 7th St, Suite 233 Los Angeles,
+									California 90014 USA</em>
+							</div>
+							<div class="b-info__contacts-item">
+								<span class="fa fa-phone"></span>
+								<em>Phone:  1-800- 624-5462</em>
+							</div>
+							<div class="b-info__contacts-item">
+								<span class="fa fa-fax"></span>
+								<em>FAX:  1-800- 624-5462</em>
+							</div>
+							<div class="b-info__contacts-item">
+								<span class="fa fa-envelope"></span>
+								<em>Email:  info@domain.com</em>
+							</div>
+						</address>
+						<address class="b-info__map">
+							<a href="contacts.html">Open Location Map</a>
+						</address>
+					</div>
+				</div>
+			</div>
+		</div><!--b-info-->
+
+		<footer class="b-footer">
+			<a id="to-top" href="#this-is-top"><i class="fa fa-chevron-up"></i></a>
+			<div class="container">
+				<div class="row">
+					<div class="col-xs-4">
+						<div class="b-footer__company wow fadeInLeft" data-wow-delay="0.3s">
+							<div class="b-nav__logo">
+								<h3><a href="index.html">Auto<span>Club</span></a></h3>
+							</div>
+							<p>Copyright &copy; 2017.Company name All rights reserved.<a target="_blank" href="http://sc.chinaz.com/moban/">&#x7F51;&#x9875;&#x6A21;&#x677F;</a></p>
+						</div>
+					</div>
+					<div class="col-xs-8">
+						<div class="b-footer__content wow fadeInRight" data-wow-delay="0.3s">
+							<div class="b-footer__content-social">
+								<a href="#"><span class="fa fa-facebook-square"></span></a>
+								<a href="#"><span class="fa fa-twitter-square"></span></a>
+								<a href="#"><span class="fa fa-google-plus-square"></span></a>
+								<a href="#"><span class="fa fa-instagram"></span></a>
+								<a href="#"><span class="fa fa-youtube-square"></span></a>
+								<a href="#"><span class="fa fa-skype"></span></a>
+							</div>
+							<nav class="b-footer__content-nav">
+								<ul>
+									<li><a href="index.html">Home</a></li>
+									<li><a href="404.html">Pages</a></li>
+									<li><a href="listings.html">Inventory</a></li>
+									<li><a href="about.html">About</a></li>
+									<li><a href="404.html">Services</a></li>
+									<li><a href="blog.html">Blog</a></li>
+									<li><a href="listTable.html">Shop</a></li>
+									<li><a href="contacts.html">Contact</a></li>
+								</ul>
+							</nav>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer><!--b-footer-->
+		<!--Main-->   
+		<script src="__HOME_JS__/jquery-1.11.3.min.js"></script>
+		<script src="__HOME_JS__/jquery-ui.min.js"></script>
+		<script src="__HOME_JS__/bootstrap.min.js"></script>
+		<script src="__HOME_JS__/modernizr.custom.js"></script>
+
+		<script src="__HOME_PUBLIC__/assets/rendro-easy-pie-chart/dist/jquery.easypiechart.min.js"></script>
+		<script src="__HOME_JS__/waypoints.min.js"></script>
+		<script src="__HOME_JS__/jquery.easypiechart.min.js"></script>
+		<script src="__HOME_JS__/classie.js"></script>
+
+		<!--Switcher-->
+		<script src="__HOME_PUBLIC__/assets/switcher/js/switcher.js"></script>
+		<!--Owl Carousel-->
+		<script src="__HOME_PUBLIC__/assets/owl-carousel/owl.carousel.min.js"></script>
+		<!--bxSlider-->
+		<script src="__HOME_PUBLIC__/assets/bxslider/jquery.bxslider.js"></script>
+		<!-- jQuery UI Slider -->
+		<script src="__HOME_PUBLIC__/assets/slider/jquery.ui-slider.js"></script>
+
+		<!--Theme-->
+		<script src="__HOME_JS__/jquery.smooth-scroll.js"></script>
+		<script src="__HOME_JS__/wow.min.js"></script>
+		<script src="__HOME_JS__/jquery.placeholder.min.js"></script>
+		<script src="__HOME_JS__/theme.js"></script>
 
 	</body>
 </html>

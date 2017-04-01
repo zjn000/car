@@ -8,6 +8,7 @@ return array(
     'TMPL_PARSE_STRING'      => array(                           // 定义常用路径
         '__OSS__'            => OSS_URL,
         '__PUBLIC__'         => OSS_URL.__ROOT__.'/Public',
+        '__HOME_PUBLIC__'       => __ROOT__.trim(TMPL_PATH,'.').'Home/Public',
         '__HOME_CSS__'       => __ROOT__.trim(TMPL_PATH,'.').'Home/Public/css',
         '__HOME_JS__'        => __ROOT__.trim(TMPL_PATH,'.').'Home/Public/js',
         '__HOME_IMAGES__'    => OSS_URL.trim(TMPL_PATH,'.').'Home/Public/images',
@@ -25,6 +26,7 @@ return array(
         '__APP_JS__'         => __ROOT__.trim(TMPL_PATH,'.').'App/Public/js',
         '__APP_IMAGES__'     => OSS_URL.trim(TMPL_PATH,'.').'App/Public/images'
     ),
+		
 //***********************************URL设置**************************************
     'MODULE_ALLOW_LIST'      => array('Home','Admin','Api','User','App'), //允许访问列表
     'URL_HTML_SUFFIX'        => '',  // URL伪静态后缀设置
